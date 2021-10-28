@@ -1,0 +1,44 @@
+.main{
+    background-color: mistyrose;
+}
+.para{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.crd{
+    padding-left: 240px;
+}
+.cd{
+    padding-left: 400px;
+}
+.hd{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font: bolder;
+}
+.road{
+    background-color: ivory;
+}
+.park{
+    background-color: papayawhip;
+}
+.spiritual{
+    background-color: seashell;
+}
+.overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: auto;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+.h:hover .overlay{
+    opacity: 1;
+}
