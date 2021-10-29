@@ -13,11 +13,69 @@
     <title>Browse by state </title>
   </head>
   <body>
+    
+     <nav class="navbar navbar-expand-lg navbar-light " style="background-color: rgb(8, 8, 56); font-size: 20px;">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">Roadtrippers!</a>
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation ">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="BrowseByTripPage.html">Brows By Trips</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="#">Abot Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="#">Helpdesk</a>
+          </li>
+          </ul>
+            </div>
+    
+  
+        <button class="open-button" onclick="openForm()">
+        Login</button>
+  
+  <div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+      <h1>Login</h1>
+  
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+  <center>
+      <button type="submit" class="btn">Login</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form></center>
+  </div>
+  
+  <script>
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+  </script>
+  
+        
+      </div>
+      </div> 
+      
+  </nav>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"/>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
@@ -364,7 +422,150 @@ Fringed by the Great Himalayas in the north, it stretches southwards and at the 
       </div>
       <br>
       <br>
+ <!-- Footer -->
+<footer class="page-footer font-small unique-color-dark">
 
+  <div style="background-color: rgb(8, 8, 56);color: #f1f1f1;">
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+
+        <!-- Grid column -->
+     
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f white-text mr-4"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter white-text mr-4"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g white-text mr-4"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in white-text mr-4"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram white-text"> </i>
+          </a>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+      <div style="background-color: rgb(8, 8, 56) ;color: #f1f1f1">
+    </div>
+  </div>
+
+  <!-- Footer Links -->
+ 
+  <div class="container text-center text-md-left mt-5">
+
+
+
+
+    <!-- Grid row -->
+    <div class="row mt-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">Roadtrippers</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>“Road trips are not about anywhere you’ll go, they’re about going anywhere.”</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Useful Links</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; color: #f1f1f1;">
+        <p>
+          Homepage
+        </p>
+        <p>
+         Browse By Trips
+        </p>
+        <p>
+          About Us
+        </p>
+        <p>
+          HelpDesk
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Social Handles</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a >Facebook</a>
+        </p>
+        <p>
+          <a >Twitter</a>
+        </p>
+        <p>
+          <a >Instagram</a>
+        </p>
+        <p>
+          <a >Gmail</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <i class="fas fa-home "></i>Pune,Maharashtra</p>
+        <p>
+          <i class="glyphicon glyphicon-envelope"></i> roadtrippers@gmail.com</p>
+        <p>
+          <i class="fas fa-phone mr-3"></i> +020 854745822 </p >
+        <p>
+          <i class="fas fa-print mr-3"></i>  +020 745295822</p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+<hr/>
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright: Roadtrippers!
+
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
   </body>
 </html>
